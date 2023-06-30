@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Entrada Numérica</title>
+</head>
+
+<body>
+    <h2>Validação Numérica JavaScript</h2>
+    <p> Por favor insira um numero entre 0 a 10:</p>
+    <input id="num">
+    <button type="button" onclick="check()">Confira a sua Resposta</button>
+    <p id="resultado"></p>
+
+    <script>
+        function check() {
+            let z = document.getElementById('num').value;
+            let texto
+            if (z, 0 || z > 10) {
+                texto = "Número inválido"
+            } else {
+                texto = `O valor ${z} atende as condições desejadas.`
+            }
+            document.getElementById(`resultado`).innerHTML = texto;
+        }
+    </script>
+</body>
+
+</html>

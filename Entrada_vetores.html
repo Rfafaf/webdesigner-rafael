@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de valores em Vetores</title>
+</head>
+<body>
+    <h1> javascript Vetores</h1>
+<p> Insira os valores do vetor:</p>   
+<input type="text" id="valor1" placeholder = "digite o valor">
+ 
+<button onclick=" AdicionarValor()"> Adicionar valor</button>
+<button onclick="criarVetor()">Criar Vetor</button>
+
+<p id="vetor"></p>
+<p id="tamanho"></p>
+<p id="lista"></p>
+
+<script>
+    let carros = [];
+    function AdicionarValor(){
+        const valor = document.getElementById("valor1").value;
+        carros.push (valor);
+        document.getElementById("valor1").value = "";
+    }
+
+    function criarVetor() {
+        let tam = carros.length;
+        let text = "<ul>";
+            for (let i = 0; i < tam; i++) {
+                text += "<li>" + carros[i] + "</li>";
+            } text += "</ul>";
+            document.getElementById("vetor").innerHTML = carros;
+            document.getElementById("tamanho").innerHTML = tam;
+            document.getElementById("lista").innerHTML = text;
+    }
+</script>
+    
+</body>
+</html>

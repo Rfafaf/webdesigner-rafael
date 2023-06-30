@@ -1,0 +1,118 @@
+/*Estilo gerais*/
+body {
+    color: black;
+    background-color: blanchedalmond;
+    font-family: Arial black
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+}
+
+h4 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+/* Estilo de Navegação*/
+nav {
+    background-color: azure;
+    paddin: 100%;
+    border-radius: 10px;
+    ;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 16px;
+    margin: 0;
+    text-align: left;
+    justify-content: space-around;
+    margin: 0;
+    padding: 16px;
+    display: flex;
+
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: brown
+}
+
+main {
+    padding: 20px;
+
+}
+
+section#projetos{
+    text-align: left;
+
+}
+
+section#sobre{
+    text-align: center;
+}
+
+img, p{
+    display: inline-block;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+    /*Estilos de Rodapé*/
+}
+
+footer {
+    background-color: aquamarine color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}

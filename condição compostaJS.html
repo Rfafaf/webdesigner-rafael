@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDIÇÕES COMPOSTA JS</title>
+</head>
+
+<body>
+    <h1><i>Nacionalidade</h1></i></h1>
+    País: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Conferir" onclick="país()">
+    <div id="res"></div>
+    </div>
+    <Script>
+
+        function país() {
+            var txtn = window.document.getElementById('txtp')
+
+            var res = window.document.getElementById('res')
+
+            var nac = txtn.value
+
+
+            res.innerHTML = `<p> Sua Nacionalidade é ${nac}</p>`
+            if (nac == 'Brasil') {
+                res.innerHTML += `Você é Brasileiro`
+            } else {
+                res.innerHTML = `<p>Você é Estrangeiro</p>`
+
+            }
+        }
+
+
+
+    </Script>
+
+</body>
+
+</html>

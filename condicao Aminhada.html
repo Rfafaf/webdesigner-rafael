@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição Alinhada</title>
+</head>
+
+<body>
+    <h2> JavaScript_Condições _Aninhadas</h2>
+    <p> Uma saudação baseada no tempo....:</p>
+    <p id="sauda"></p>
+    <script>
+        const time = new Date().getMinutes();
+        let saudacao; 
+        if (time < 10) {
+            saudacao = "bom dia";
+        } else if (time < 20) {
+            saudacao = "Tenha um Bom Dia";
+        } else {
+            saudacao = "Boa noite";
+        }
+        document.getElementById("sauda").innerHTML = saudacao;
+
+    </script>
+    <h2> Javascript Switch-case</h2>
+    <p id= "dia"></p>
+
+    <script>
+        let dia;
+        switch (new Date().getDay()) {
+            case 0:
+                dia = "domingo";
+                break;
+
+            case 1:
+                dia ="Segunda";
+                break;    
+
+            case 2:
+                dia = "terça";
+                break;   
+                
+            case 3:
+                dia = "Quarta";
+                break; 
+               
+            case 4:
+                dia = "Quinta";
+                break; 
+
+            case 5:
+                dia = "SEXTA-FEIRA";
+                break; 
+
+            case 6:
+                dia = "sábado";
+                break; 
+        }
+document.getElementById("dia").innerHTML = "Hoje é: "+ dia;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS OPERADORES E VARIÁVEIS</title>
+</head>
+<body>
+    <h1> <i>Variáveis e Operadores Aritméticos JavaScript</i></h1>
+    <p> Neste exemplo, x, y e z são declarados</p>
+    <p> Eles são automaticamente declarados quando usados pela primeira vez.</p>
+    <p id="frio"></p>
+    <p id="Algo"></p>
+    <p id="divs"></p>
+    <p id="mult"></p>
+    <p id="modu"></p>
+    <p id="inc"></p>
+    <p id="decr"></p>
+    <p id="exp"></p>
+    <script>
+       x = Number(prompt('Digite o primeiro numero'));
+       y = Number(prompt('Digite o segundo numero'));
+       z = x+y
+       z+= 8;
+       m = x-y
+       d = x/y
+       mu = x*y
+       mod = x%y
+       inc = ++x
+       decr = --y
+       exp = x**3
+
+        document.getElementById("frio").innerHTML=z;
+        document.getElementById("Algo").innerHTML=m;
+        document.getElementById("divs").innerHTML=d;
+        document.getElementById("mult").innerHTML=mu;
+        document.getElementById("modu").innerHTML=mod;
+        document.getElementById("inc").innerHTML=inc;
+        document.getElementById("decr").innerHTML=decr;
+        document.getElementById("exp").innerHTML=exp;
+
+    </script>
+    
+    <h1><i>Operadores Relacionais</i></h1>
+    <h2>Operador ==</h2>
+    <p>Atribua 5 a x, e mostre o valor relacional (x==5):</p>
+    <p id="igualdade"></p>
+
+    <p>Atribua 5 a b, e mostre o valor relacional (x!=5):</p>
+    <p id="nig"></p>
+
+    <p>Atribua 5 a d, e mostre o valor relacional (!==5):</p>
+    <p id="noev"></p>
+
+    <p>Atribua 5 a e, e mostre o valor relacional (>5):</p>
+    <p id="geat"></p>
+
+    <p>Atribua 5 a f, e mostre o valor relacional (x<5):</p>
+    <p id="less"></p>
+
+    <p>Atribua 5 a g, e mostre o valor relacional (>=5):</p>
+    <p id="grtha"></p>
+
+    <p>Atribua 5 a h, e mostre o valor relacional (<=5):</p>
+    <p id="less than"></p>
+
+    <script>
+let x = 5;
+document.getElementById('igualdade').innerHTML=(x===5);
+
+let b = 5
+document.getElementById('noev').innerHTML=(x!==5);
+
+let d = 5;
+document.getElementById('noev').innerHTML=(x!==5);
+
+let e = 5;
+document.getElementById('geat').innerHTML=(x>5);
+
+let f = 5;
+document.getElementById('less').innerHTML=(x<5);
+
+
+let g = 5;
+document.getElementById('grtha').innerHTML=(x>=5);
+
+let h = 5;
+document.getElementById('less than').innerHTML=(x<=5);
+    </script>
+
+</body>
+</html>
